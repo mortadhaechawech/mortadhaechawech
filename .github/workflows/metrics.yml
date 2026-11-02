@@ -93,9 +93,9 @@ jobs:
               .activity .issue { color: #38BDF8 }
             }
           plugin_languages: yes
-          plugin_languages_limit: 8
+          plugin_languages_limit: 6
           plugin_activity: yes
-          plugin_activity_limit: 6
+          plugin_activity_limit: 4
           plugin_activity_visibility: public
           plugin_repositories: yes
           plugin_repositories_featured: aws-cloudops-platform, aws-devops-springboot-postgres, spring-boot-rest-api-postgresql
