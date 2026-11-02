@@ -1,0 +1,66 @@
+# Metrics — Engineering Intelligence
+# Generates assets/github-metrics.svg with lowlighter/metrics (official action).
+#
+# Safety properties:
+#   - action pinned to an immutable commit SHA (verified 2026-11-02)
+#   - queries use METRICS_TOKEN (classic PAT, public_repo scope) — see docs/INSTALLATION.md
+#   - commits use the default committer_token (GITHUB_TOKEN), no extra secret needed
+#   - commit message carries [skip ci] so the commit never re-triggers workflows
+#   - concurrency: a running generation cannot pile up duplicates
+
+name: Metrics — Engineering Intelligence
+
+on:
+  schedule:
+    - cron: "0 4 * * 1" # every Monday 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: metrics-refresh
+  cancel-in-progress: false
+
+jobs:
+  metrics:
+    name: Generate metrics dashboard
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Generate metrics
+        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d # master@2026-11-02
+        with:
+          token: ${{ secrets.METRICS_TOKEN }} # GitHub PAT — minimum: public_repo (classic PAT)
+          user: mortadhaechawech
+          filename: assets/github-metrics.svg
+          config_timezone: Europe/Paris
+          use_prebuilt_image: yes
+          # compact base content — no hireable banner
+          base: header, activity, community, repositories, metadata
+          base_hireable: no
+          # isometric contribution calendar (real GitHub data)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          # languages actually used (static analysis of public repos)
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          # coding habits (commit/PR facts + charts)
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          # recent activity — real public events only
+          plugin_activity: yes
+          plugin_activity_limit: 8
+          plugin_activity_visibility: public
+          # featured repositories (verified existing public repos)
+          plugin_repositories: yes
+          plugin_repositories_featured: aws-cloudops-platform, aws-devops-springboot-postgres, spring-boot-rest-api-postgresql
+          plugin_repositories_forks: no
+          # achievements — compact display, earned ranks only
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 8
+          committer_message: "chore(metrics): refresh engineering intelligence dashboard [skip ci]"

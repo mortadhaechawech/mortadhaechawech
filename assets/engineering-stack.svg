@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="stTitle stDesc">
+  <title id="stTitle">Engineering stack matrix — nine technology domains</title>
+  <desc id="stDesc">Compact visual grouping of technologies: Cloud, Infrastructure, CI/CD, Security, Observability, Backend, Frontend, Mobile, and Databases.</desc>
+  <defs>
+    <style>
+      .tbl { font-family: "Segoe UI", Helvetica, Arial, sans-serif; }
+      .grp { font-size: 12px; font-weight: 700; letter-spacing: 2.2px; }
+      .tech { font-size: 14.5px; font-weight: 500; }
+      .prim { fill: #38BDF8; } .sec { fill: #818CF8; } .ok { fill: #34D399; }
+      .txt { fill: #E5EDF7; } .mut { fill: #94A3B8; }
+    </style>
+    <linearGradient id="stBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="560" rx="16" fill="url(#stBg)" stroke="#23334B" stroke-width="1.5"/>
+
+  <!-- strip -->
+  <text class="tbl grp" x="24" y="32" fill="#94A3B8">ENGINEERING STACK</text>
+  <text class="tbl" x="250" y="32" font-size="12" fill="#23334B">|</text>
+  <text class="tbl" x="266" y="32" font-size="12" fill="#94A3B8" letter-spacing="1.6">9 DOMAINS</text>
+  <path d="M 24 44 H 1176" stroke="#23334B" stroke-width="1"/>
+
+  <!-- ============ row 1 ============ -->
+  <!-- Cloud -->
+  <rect x="18" y="60" width="373" height="152" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="18" y="60" width="373" height="3" rx="1.5" fill="#38BDF8"/>
+  <text class="tbl grp prim" x="42" y="94">CLOUD</text>
+  <text class="tbl tech txt" x="42" y="128">AWS · GCP · Azure · OpenStack</text>
+  <text class="tbl" x="42" y="160" font-size="12" fill="#94A3B8">EKS, ECS Fargate, Cloud Run, GKE managed workloads</text>
+
+  <!-- Infrastructure -->
+  <rect x="411" y="60" width="373" height="152" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="411" y="60" width="373" height="3" rx="1.5" fill="#818CF8"/>
+  <text class="tbl grp sec" x="435" y="94">INFRASTRUCTURE</text>
+  <text class="tbl tech txt" x="435" y="128">Terraform · Ansible · Docker ·</text>
+  <text class="tbl tech txt" x="435" y="150">Kubernetes · Helm</text>
+  <text class="tbl" x="435" y="184" font-size="12" fill="#94A3B8">Infrastructure as Code, containerized deployments</text>
+
+  <!-- CI/CD -->
+  <rect x="804" y="60" width="373" height="152" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="804" y="60" width="373" height="3" rx="1.5" fill="#34D399"/>
+  <text class="tbl grp ok" x="828" y="94">CI / CD</text>
+  <text class="tbl tech txt" x="828" y="128">GitHub Actions · Jenkins ·</text>
+  <text class="tbl tech txt" x="828" y="150">Azure DevOps</text>
+  <text class="tbl" x="828" y="184" font-size="12" fill="#94A3B8">Hardened pipelines with automated security scanning</text>
+
+  <!-- ============ row 2 ============ -->
+  <!-- Security -->
+  <rect x="18" y="228" width="373" height="152" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="18" y="228" width="373" height="3" rx="1.5" fill="#818CF8"/>
+  <text class="tbl grp sec" x="42" y="262">SECURITY</text>
+  <text class="tbl tech txt" x="42" y="296">SonarQube · SonarCloud · Trivy ·</text>
+  <text class="tbl tech txt" x="42" y="318">Snyk · OWASP ZAP</text>
+  <text class="tbl" x="42" y="352" font-size="12" fill="#94A3B8">Security by design, static and dependency analysis</text>
+
+  <!-- Observability -->
+  <rect x="411" y="228" width="373" height="152" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="411" y="228" width="373" height="3" rx="1.5" fill="#34D399"/>
+  <text class="tbl grp ok" x="435" y="262">OBSERVABILITY</text>
+  <text class="tbl tech txt" x="435" y="296">Prometheus · Grafana</text>
+  <text class="tbl" x="435" y="328" font-size="12" fill="#94A3B8">Metrics, logging and dashboards for production systems</text>
+
+  <!-- Backend -->
+  <rect x="804" y="228" width="373" height="152" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="804" y="228" width="373" height="3" rx="1.5" fill="#38BDF8"/>
+  <text class="tbl grp prim" x="828" y="262">BACKEND</text>
+  <text class="tbl tech txt" x="828" y="296">Java 21 · Spring Boot 3 ·</text>
+  <text class="tbl tech txt" x="828" y="318">REST APIs</text>
+  <text class="tbl" x="828" y="352" font-size="12" fill="#94A3B8">JVM ecosystem, multi-tenant services, webhooks</text>
+
+  <!-- ============ row 3 ============ -->
+  <!-- Frontend -->
+  <rect x="18" y="396" width="373" height="148" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="18" y="396" width="373" height="3" rx="1.5" fill="#818CF8"/>
+  <text class="tbl grp sec" x="42" y="430">FRONTEND</text>
+  <text class="tbl tech txt" x="42" y="464">Angular · React · TypeScript</text>
+  <text class="tbl" x="42" y="496" font-size="12" fill="#94A3B8">Multilingual product UIs, real-time views</text>
+
+  <!-- Mobile -->
+  <rect x="411" y="396" width="373" height="148" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="411" y="396" width="373" height="3" rx="1.5" fill="#38BDF8"/>
+  <text class="tbl grp prim" x="435" y="430">MOBILE</text>
+  <text class="tbl tech txt" x="435" y="464">Ionic · Capacitor</text>
+  <text class="tbl" x="435" y="496" font-size="12" fill="#94A3B8">Cross-platform delivery driver apps</text>
+
+  <!-- Databases -->
+  <rect x="804" y="396" width="373" height="148" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="804" y="396" width="373" height="3" rx="1.5" fill="#34D399"/>
+  <text class="tbl grp ok" x="828" y="430">DATABASES</text>
+  <text class="tbl tech txt" x="828" y="464">PostgreSQL · MySQL · MariaDB</text>
+  <text class="tbl" x="828" y="496" font-size="12" fill="#94A3B8">Relational modeling for transactional systems</text>
+</svg>

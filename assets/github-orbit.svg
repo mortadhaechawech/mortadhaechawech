@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="obTitle obDesc">
+  <title id="obTitle">GitHub Profile Orbit — engineering ecosystem (pending first workflow run)</title>
+  <desc id="obDesc">This asset is generated automatically by the orbit.yml workflow. This placeholder is displayed until the first run.</desc>
+  <defs>
+    <linearGradient id="obBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="420" rx="16" fill="url(#obBg)" stroke="#23334B" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <circle cx="600" cy="200" r="118" fill="none" stroke="#23334B" stroke-width="1.4"/>
+  <circle cx="600" cy="200" r="74" fill="none" stroke="#38BDF8" stroke-width="1.4" opacity="0.55"/>
+  <circle cx="600" cy="200" r="34" fill="#111C2E" stroke="#38BDF8" stroke-width="1.6"/>
+  <circle cx="718" cy="200" r="6" fill="#38BDF8"/>
+  <circle cx="600" cy="126" r="4.5" fill="#818CF8"/>
+  <circle cx="537" cy="248" r="4" fill="#34D399"/>
+  <text x="600" y="336" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2.2" fill="#E5EDF7">GITHUB PROFILE ORBIT — ENGINEERING ECOSYSTEM</text>
+  <text x="600" y="362" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#94A3B8">Generated automatically by the orbit.yml workflow (template: landscape · theme: auto)</text>
+  <text x="600" y="384" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#94A3B8">Pending first run — see docs/INSTALLATION.md</text>
+</svg>

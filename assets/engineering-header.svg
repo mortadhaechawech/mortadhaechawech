@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" role="img" aria-labelledby="hdTitle hdDesc">
+  <title id="hdTitle">Mortadha Echawech — DevOps &amp; Cloud Engineer | Full-Stack Developer</title>
+  <desc id="hdDesc">Identity header: name, professional role, location Tunis, and remote availability for France and Europe.</desc>
+  <defs>
+    <linearGradient id="hdBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+    <linearGradient id="hdAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+    <filter id="hdGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="hdGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#23334B" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <!-- panel -->
+  <rect x="1" y="1" width="998" height="198" rx="16" fill="url(#hdBg)" stroke="#23334B" stroke-width="1.5"/>
+  <rect x="24" y="24" width="952" height="152" rx="10" fill="url(#hdGrid)" opacity="0.35"/>
+
+  <!-- left accent bar -->
+  <rect x="24" y="46" width="5" height="108" rx="2.5" fill="url(#hdAccent)"/>
+
+  <!-- identity -->
+  <text x="52" y="86" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="0.5" fill="#E5EDF7">MORTADHA ECHAWECH</text>
+  <text x="52" y="116" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" letter-spacing="2.6" fill="#38BDF8">DEVOPS &amp; CLOUD ENGINEER · FULL-STACK DEVELOPER</text>
+  <text x="52" y="141" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">Kubernetes on AWS EKS · hardened CI/CD · complete products on AWS and Google Cloud</text>
+
+  <!-- right readout chips -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" letter-spacing="1">
+    <rect x="672" y="46" width="304" height="30" rx="7" fill="#0D1524" stroke="#23334B"/>
+    <text x="688" y="65" fill="#E5EDF7">TUNIS, TUNISIA</text>
+    <circle cx="952" cy="61" r="4" fill="#34D399"/>
+    <rect x="672" y="84" width="304" height="30" rx="7" fill="#0D1524" stroke="#23334B"/>
+    <text x="688" y="103" fill="#E5EDF7">OPEN TO REMOTE — FR / EU</text>
+    <rect x="672" y="122" width="304" height="30" rx="7" fill="#0D1524" stroke="#23334B"/>
+    <text x="688" y="141" fill="#94A3B8">RELOCATION POSSIBLE</text>
+  </g>
+
+  <!-- scanline accent -->
+  <path d="M 60 168 H 465" stroke="#38BDF8" stroke-width="1.4" opacity="0.5"/>
+  <circle cx="465" cy="168" r="2.6" fill="#38BDF8" filter="url(#hdGlow)"/>
+</svg>

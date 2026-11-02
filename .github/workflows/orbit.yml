@@ -1,0 +1,61 @@
+# Orbit — Engineering Ecosystem
+# Generates assets/github-orbit.svg from real public GitHub data of @mortadhaechawech
+# using the official action NiconiKimg/github-profile-orbit.
+#
+# Safety properties:
+#   - action pinned to an immutable commit SHA (verified 2026-11-02)
+#   - least privilege: contents:write only (auto_commit needs to push the SVG)
+#   - auto_commit only emits a commit when the SHA-256 of the SVG changed
+#   - commit message carries [skip ci] so the commit never re-triggers workflows
+#   - concurrency: a running generation cannot pile up duplicates
+
+name: Orbit — Engineering Ecosystem
+
+on:
+  schedule:
+    - cron: "30 3 * * 1" # every Monday 03:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: orbit-refresh
+  cancel-in-progress: false
+
+jobs:
+  orbit:
+    name: Generate orbit visualization
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Generate orbit visualization
+        uses: NiconiKimg/github-profile-orbit@c0c956e19bdab11cc75be32613f433a5528a3539 # main@2026-11-02
+        with:
+          username: mortadhaechawech
+          token: ${{ secrets.GITHUB_TOKEN }} # GraphQL queries against public data only
+          template: landscape # architectural matrix — data-oriented, dashboard aesthetic
+          theme: auto # adapts to viewer GitHub dark/light mode
+          role: "DevOps & Cloud Engineer | Full-Stack Developer"
+          custom_title: "Engineering Command Center"
+          output_path: assets/github-orbit.svg
+          # Excluded: trailing-hyphen placeholder repo, empty repos, fork.
+          # assay is intentionally kept so it appears automatically once populated.
+          exclude_repositories: |
+            mortadhaechawech-
+            auth-dashboard-photo
+            react-native-reanimated-loginscreen
+          max_repositories: 25
+          include_forks: false
+          include_archived: false
+          # Sober professional rendering: no decorative fleet
+          show_ufo: false
+          show_spaceship: false
+          show_satellite: false
+          show_comet: false
+          # Real GitHub telemetry only (stars/commits/forks of actual repos)
+          show_stats: true
+          auto_commit: true
+          commit_message: "chore(orbit): refresh engineering ecosystem visualization [skip ci]"

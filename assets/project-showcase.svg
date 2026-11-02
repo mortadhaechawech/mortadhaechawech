@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" role="img" aria-labelledby="psTitle psDesc">
+  <title id="psTitle">Featured engineering systems — SHOOTLY, VAYMOS, ASSAY</title>
+  <desc id="psDesc">Three flagship systems: Shootly, a multi-vendor commerce platform; Vaymos, a real-time delivery platform; Assay, an AI-powered active learning platform.</desc>
+  <defs>
+    <style>
+      .tbl { font-family: "Segoe UI", Helvetica, Arial, sans-serif; }
+      .name { font-size: 22px; font-weight: 700; letter-spacing: 1.6px; fill: #E5EDF7; }
+      .chip { font-size: 10.5px; font-weight: 700; letter-spacing: 1.6px; }
+      .line { font-size: 12.5px; fill: #E5EDF7; }
+      .note { font-size: 11.5px; fill: #94A3B8; }
+      .sk { font-size: 11.5px; font-weight: 700; letter-spacing: 0.8px; }
+    </style>
+    <linearGradient id="psBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="330" rx="16" fill="url(#psBg)" stroke="#23334B" stroke-width="1.5"/>
+
+  <!-- ============ SHOOTLY ============ -->
+  <rect x="18" y="18" width="373" height="294" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="42" y="42" width="96" height="22" rx="11" fill="#0D1524" stroke="#38BDF8"/>
+  <text class="tbl chip" x="52" y="57" fill="#38BDF8">E-COMMERCE</text>
+  <text class="tbl name" x="42" y="96">SHOOTLY</text>
+  <text class="tbl note" x="42" y="116">Multi-vendor commerce &amp; dropshipping platform</text>
+  <path d="M 42 130 H 367" stroke="#23334B" stroke-width="1"/>
+  <circle cx="46" cy="148" r="3" fill="#38BDF8"/>
+  <text class="tbl line" x="56" y="152">Multi-tenant commerce architecture</text>
+  <circle cx="46" cy="172" r="3" fill="#38BDF8"/>
+  <text class="tbl line" x="56" y="176">Reseller storefront generation</text>
+  <circle cx="46" cy="196" r="3" fill="#38BDF8"/>
+  <text class="tbl line" x="56" y="200">Supplier &amp; inventory workflows</text>
+  <circle cx="46" cy="220" r="3" fill="#38BDF8"/>
+  <text class="tbl line" x="56" y="224">4-language experience, wallets &amp; claims</text>
+  <path d="M 42 246 H 367" stroke="#23334B" stroke-width="1"/>
+  <text class="tbl sk" x="42" y="272" fill="#38BDF8">Spring Boot 3 · Angular ·</text>
+  <text class="tbl sk" x="42" y="290" fill="#38BDF8">Google Cloud Run · Firebase</text>
+
+  <!-- ============ VAYMOS ============ -->
+  <rect x="411" y="18" width="373" height="294" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="435" y="42" width="88" height="22" rx="11" fill="#0D1524" stroke="#818CF8"/>
+  <text class="tbl chip" x="449" y="57" fill="#818CF8">LOGISTICS</text>
+  <text class="tbl name" x="435" y="96">VAYMOS</text>
+  <text class="tbl note" x="435" y="116">Multi-vertical delivery &amp; logistics platform</text>
+  <path d="M 435 130 H 760" stroke="#23334B" stroke-width="1"/>
+  <circle cx="439" cy="148" r="3" fill="#818CF8"/>
+  <text class="tbl line" x="449" y="152">Zone-based driver broadcasting</text>
+  <circle cx="439" cy="172" r="3" fill="#818CF8"/>
+  <text class="tbl line" x="449" y="176">Real-time GPS over WebSocket/STOMP</text>
+  <circle cx="439" cy="196" r="3" fill="#818CF8"/>
+  <text class="tbl line" x="449" y="200">WebRTC in-app calls</text>
+  <circle cx="439" cy="220" r="3" fill="#818CF8"/>
+  <text class="tbl line" x="449" y="224">HMAC-signed webhook integrations</text>
+  <path d="M 435 246 H 760" stroke="#23334B" stroke-width="1"/>
+  <text class="tbl sk" x="435" y="272" fill="#818CF8">Spring Boot · Angular/Ionic ·</text>
+  <text class="tbl sk" x="435" y="290" fill="#818CF8">AWS · OSRM</text>
+
+  <!-- ============ ASSAY ============ -->
+  <rect x="804" y="18" width="373" height="294" rx="12" fill="#111C2E" stroke="#23334B"/>
+  <rect x="828" y="42" width="88" height="22" rx="11" fill="#0D1524" stroke="#34D399"/>
+  <text class="tbl chip" x="842" y="57" fill="#34D399">EDTECH · AI</text>
+  <text class="tbl name" x="828" y="96">ASSAY</text>
+  <text class="tbl note" x="828" y="116">AI-powered active learning platform</text>
+  <path d="M 828 130 H 1153" stroke="#23334B" stroke-width="1"/>
+  <circle cx="832" cy="148" r="3" fill="#34D399"/>
+  <text class="tbl line" x="842" y="152">AI Tutor — Feynman learning mode</text>
+  <circle cx="832" cy="172" r="3" fill="#34D399"/>
+  <text class="tbl line" x="842" y="176">Unified knowledge map &amp; graph</text>
+  <circle cx="832" cy="196" r="3" fill="#34D399"/>
+  <text class="tbl line" x="842" y="200">Spaced-repetition workflows</text>
+  <circle cx="832" cy="220" r="3" fill="#34D399"/>
+  <text class="tbl line" x="842" y="224">Secure server-side LLM routing</text>
+  <path d="M 828 246 H 1153" stroke="#23334B" stroke-width="1"/>
+  <text class="tbl sk" x="828" y="272" fill="#34D399">React · TypeScript ·</text>
+  <text class="tbl sk" x="828" y="290" fill="#34D399">Supabase · Edge Functions</text>
+
+  <!-- repository status footer -->
+  <text class="tbl" x="24" y="312" font-size="10.5" fill="#94A3B8" letter-spacing="1">SOURCE REPOSITORIES: ASSAY → /assay · SHOOTLY &amp; VAYMOS → private deployments — repositories pending publication</text>
+</svg>
