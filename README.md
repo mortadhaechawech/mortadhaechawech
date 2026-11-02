@@ -56,36 +56,45 @@
 
 <img src="assets/project-showcase.svg" alt="Showcase of three flagship systems: SHOOTLY multi-vendor commerce platform, VAYMOS real-time delivery platform, ASSAY AI active learning platform." width="100%">
 
-### ▪ SHOOTLY — Multi-vendor commerce & dropshipping platform
+#### ▪ SHOOTLY — Multi-vendor commerce & dropshipping platform
 
-A commerce ecosystem connecting suppliers, resellers, and customers through branded
-storefronts, seller wallets, payouts, and claims management.
+A commerce ecosystem connecting suppliers, resellers, and customers through branded storefronts, seller wallets, payouts, and claims management. `Spring Boot 3` `Angular` `Google Cloud Run` `Firebase`
+
+<details>
+<summary>▸ Engineering details</summary>
 
 - **Architecture** — multi-tenant commerce core, reseller storefront generation
 - **Workflows** — supplier onboarding, inventory, wallet payouts, claims
 - **I18N** — four-language customer experience
-- **Stack** · `Spring Boot 3` `Angular` `Google Cloud Run` `Firebase`
 
-### ▪ VAYMOS — Multi-vertical delivery & logistics platform
+</details>
 
-A real-time delivery platform with automated dispatching, driver coordination,
-and location-aware operations.
+#### ▪ VAYMOS — Multi-vertical delivery & logistics platform
+
+A real-time delivery platform with automated dispatching, driver coordination, and location-aware operations. `Spring Boot` `Angular/Ionic` `AWS` `OSRM`
+
+<details>
+<summary>▸ Engineering details</summary>
 
 - **Dispatch** — zone-based driver broadcasting engine
 - **Real-time** — GPS tracking over WebSocket/STOMP, WebRTC in-app calls
 - **Integrations** — HMAC-signed webhooks, OSRM routing
-- **Stack** · `Spring Boot` `Angular/Ionic` `AWS` `OSRM`
 
-### ▪ ASSAY — AI-powered active learning platform → [`/assay`](https://github.com/mortadhaechawech/assay)
+</details>
 
-An intelligent learning environment combining personalized tutoring, knowledge
-mapping, and spaced repetition.
+#### ▪ ASSAY — AI-powered active learning platform → [`/assay`](https://github.com/mortadhaechawech/assay)
+
+An intelligent learning environment combining personalized tutoring, knowledge mapping, and spaced repetition. `React` `TypeScript` `Supabase` `Edge Functions`
+
+<details>
+<summary>▸ Engineering details</summary>
 
 - **AI Tutor** — Feynman teaching mode, personalized progression
 - **Knowledge** — unified knowledge map linking paths, quizzes & reviews
 - **Memory** — spaced-repetition workflows
 - **Security** — server-side LLM routing, no client-exposed keys
-- **Stack** · `React` `TypeScript` `Supabase` `Edge Functions`
+
+</details>
 
 <sub>Repository note — the ASSAY repository is real but currently empty (code publication pending).
 SHOOTLY and VAYMOS source repositories are private deployments; no public link is invented here.</sub>
@@ -96,23 +105,14 @@ SHOOTLY and VAYMOS source repositories are private deployments; no public link i
 <a id="engineering-principles"></a>
 ## &nbsp;F · ENGINEERING PRINCIPLES
 
-**`IaC`** Infrastructure as Code — every environment declarative, reproducible, reviewable
-**`AUTO`** Automation First — pipelines over clicking, scripts over tribal knowledge
-**`SEC`** Security by Design — scanning and hardening inside CI/CD, not after it
-**`OBS`** Observability — instrumentation shipped with the feature, not bolted on
-**`REL`** Production Reliability — boring, consistent rollouts that survive traffic
+<img src="assets/engineering-principles.svg" alt="Five engineering principles: Infrastructure as Code — declarative, versioned, reviewable; Automation First — pipelines over clicking, scripts over tribal knowledge; Security by Design — scanning and hardening inside CI/CD, not after it; Observability — instrumentation shipped with the feature; Production Reliability — boring, consistent rollouts that survive traffic." width="100%">
 
 <br>
 
 <!-- ═════════════ G. CURRENT ENGINEERING FOCUS ═════════════ -->
 ## &nbsp;G · CURRENT ENGINEERING FOCUS
 
-- **Advanced AWS architecture** — EKS, ECS Fargate, networking, cost-aware design
-- **Kubernetes platform engineering** — Helm charting, workload reliability
-- **Terraform** — IaC modules for deployable, reviewable infrastructure
-- **Secure CI/CD** — GitHub Actions pipelines with automated security scanning
-- **DevSecOps** — shift-left security across build and deploy
-- **Cloud observability** — Prometheus + Grafana production dashboards
+<img src="assets/engineering-focus.svg" alt="Six active focus areas: 01 Advanced AWS architecture (EKS, ECS Fargate, networking, cost-aware design); 02 Kubernetes platform engineering (Helm charting, workload reliability); 03 Terraform (IaC modules); 04 Secure CI/CD (GitHub Actions, automated security scanning); 05 DevSecOps (shift-left security); 06 Cloud observability (Prometheus + Grafana production dashboards)." width="100%">
 
 <br>
 

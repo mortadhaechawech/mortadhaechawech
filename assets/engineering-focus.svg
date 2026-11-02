@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" role="img" aria-labelledby="fcTitle fcDesc">
+  <title id="fcTitle">Current engineering focus — AWS architecture, Kubernetes platform, Terraform, secure CI/CD, DevSecOps, observability</title>
+  <desc id="fcDesc">Six active engineering focus areas displayed as a two-row visual roadmap.</desc>
+  <defs>
+    <linearGradient id="fcBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+    <style>
+      .fc-tbl { font-family: "Segoe UI", Helvetica, Arial, sans-serif; }
+      .fc-tags { font-size: 10.5px; fill: #94A3B8; }
+      .fc-name { font-size: 14px; font-weight: 600; fill: #E5EDF7; }
+      .fc-idx { font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="190" rx="16" fill="url(#fcBg)" stroke="#23334B" stroke-width="1.5"/>
+  <text class="fc-tbl fc-idx" x="24" y="30" fill="#94A3B8" letter-spacing="2">CURRENT FOCUS</text>
+  <path d="M 130 26 H 1176" stroke="#23334B" stroke-width="1"/>
+
+  <!-- row 1 -->
+  <g>
+    <rect x="20" y="42" width="373" height="62" rx="10" fill="#111C2E" stroke="#38BDF8" stroke-opacity="0.35"/>
+    <text class="fc-tbl fc-idx" x="38" y="66" fill="#38BDF8">01</text>
+    <text class="fc-tbl fc-name" x="66" y="66">Advanced AWS architecture</text>
+    <text class="fc-tbl fc-tags" x="66" y="86">EKS · ECS Fargate · networking · cost-aware design</text>
+  </g>
+  <g>
+    <rect x="413" y="42" width="373" height="62" rx="10" fill="#111C2E" stroke="#818CF8" stroke-opacity="0.35"/>
+    <text class="fc-tbl fc-idx" x="431" y="66" fill="#818CF8">02</text>
+    <text class="fc-tbl fc-name" x="459" y="66">Kubernetes platform engineering</text>
+    <text class="fc-tbl fc-tags" x="459" y="86">Helm charting · workload reliability</text>
+  </g>
+  <g>
+    <rect x="806" y="42" width="373" height="62" rx="10" fill="#111C2E" stroke="#34D399" stroke-opacity="0.35"/>
+    <text class="fc-tbl fc-idx" x="824" y="66" fill="#34D399">03</text>
+    <text class="fc-tbl fc-name" x="852" y="66">Terraform</text>
+    <text class="fc-tbl fc-tags" x="852" y="86">IaC modules · deployable, reviewable infra</text>
+  </g>
+
+  <!-- row 2 -->
+  <g>
+    <rect x="20" y="114" width="373" height="62" rx="10" fill="#111C2E" stroke="#818CF8" stroke-opacity="0.35"/>
+    <text class="fc-tbl fc-idx" x="38" y="138" fill="#818CF8">04</text>
+    <text class="fc-tbl fc-name" x="66" y="138">Secure CI/CD</text>
+    <text class="fc-tbl fc-tags" x="66" y="158">GitHub Actions · automated security scanning</text>
+  </g>
+  <g>
+    <rect x="413" y="114" width="373" height="62" rx="10" fill="#111C2E" stroke="#34D399" stroke-opacity="0.35"/>
+    <text class="fc-tbl fc-idx" x="431" y="138" fill="#34D399">05</text>
+    <text class="fc-tbl fc-name" x="459" y="138">DevSecOps</text>
+    <text class="fc-tbl fc-tags" x="459" y="158">shift-left security across build &amp; deploy</text>
+  </g>
+  <g>
+    <rect x="806" y="114" width="373" height="62" rx="10" fill="#111C2E" stroke="#38BDF8" stroke-opacity="0.35"/>
+    <text class="fc-tbl fc-idx" x="824" y="138" fill="#38BDF8">06</text>
+    <text class="fc-tbl fc-name" x="852" y="138">Cloud observability</text>
+    <text class="fc-tbl fc-tags" x="852" y="158">Prometheus · Grafana production dashboards</text>
+  </g>
+</svg>

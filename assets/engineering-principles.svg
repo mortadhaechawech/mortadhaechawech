@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" role="img" aria-labelledby="prTitle prDesc">
+  <title id="prTitle">Engineering principles — Infrastructure as Code, Automation First, Security by Design, Observability, Production Reliability</title>
+  <desc id="prDesc">Five engineering principles displayed as a compact visual strip.</desc>
+  <defs>
+    <linearGradient id="prBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+    <style>
+      .pr-tbl { font-family: "Segoe UI", Helvetica, Arial, sans-serif; }
+      .pr-code { font-size: 12px; font-weight: 800; letter-spacing: 2px; }
+      .pr-name { font-size: 13.5px; font-weight: 600; fill: #E5EDF7; }
+      .pr-sub { font-size: 10.5px; fill: #94A3B8; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="150" rx="16" fill="url(#prBg)" stroke="#23334B" stroke-width="1.5"/>
+  <text class="pr-tbl pr-code" x="24" y="30" fill="#94A3B8">PRINCIPLES</text>
+  <path d="M 110 26 H 1176" stroke="#23334B" stroke-width="1"/>
+
+  <!-- 5 principle chips -->
+  <g>
+    <rect x="20" y="44" width="224" height="88" rx="10" fill="#111C2E" stroke="#23334B"/>
+    <rect x="20" y="44" width="3" height="88" rx="1.5" fill="#38BDF8"/>
+    <text class="pr-tbl pr-code" x="38" y="70" fill="#38BDF8">IaC</text>
+    <text class="pr-tbl pr-name" x="38" y="92">Infrastructure as Code</text>
+    <text class="pr-tbl pr-sub" x="38" y="110">declarative · versioned</text>
+    <text class="pr-tbl pr-sub" x="38" y="124">reviewable</text>
+  </g>
+  <g>
+    <rect x="254" y="44" width="224" height="88" rx="10" fill="#111C2E" stroke="#23334B"/>
+    <rect x="254" y="44" width="3" height="88" rx="1.5" fill="#818CF8"/>
+    <text class="pr-tbl pr-code" x="272" y="70" fill="#818CF8">AUTO</text>
+    <text class="pr-tbl pr-name" x="272" y="92">Automation First</text>
+    <text class="pr-tbl pr-sub" x="272" y="110">pipelines &gt; clicking</text>
+    <text class="pr-tbl pr-sub" x="272" y="124">scripts &gt; tribal knowledge</text>
+  </g>
+  <g>
+    <rect x="488" y="44" width="224" height="88" rx="10" fill="#111C2E" stroke="#23334B"/>
+    <rect x="488" y="44" width="3" height="88" rx="1.5" fill="#34D399"/>
+    <text class="pr-tbl pr-code" x="506" y="70" fill="#34D399">SEC</text>
+    <text class="pr-tbl pr-name" x="506" y="92">Security by Design</text>
+    <text class="pr-tbl pr-sub" x="506" y="110">scan + harden inside CI/CD</text>
+    <text class="pr-tbl pr-sub" x="506" y="124">not after it</text>
+  </g>
+  <g>
+    <rect x="722" y="44" width="224" height="88" rx="10" fill="#111C2E" stroke="#23334B"/>
+    <rect x="722" y="44" width="3" height="88" rx="1.5" fill="#38BDF8"/>
+    <text class="pr-tbl pr-code" x="740" y="70" fill="#38BDF8">OBS</text>
+    <text class="pr-tbl pr-name" x="740" y="92">Observability</text>
+    <text class="pr-tbl pr-sub" x="740" y="110">instrumentation shipped</text>
+    <text class="pr-tbl pr-sub" x="740" y="124">with the feature</text>
+  </g>
+  <g>
+    <rect x="956" y="44" width="224" height="88" rx="10" fill="#111C2E" stroke="#23334B"/>
+    <rect x="956" y="44" width="3" height="88" rx="1.5" fill="#818CF8"/>
+    <text class="pr-tbl pr-code" x="974" y="70" fill="#818CF8">REL</text>
+    <text class="pr-tbl pr-name" x="974" y="92">Production Reliability</text>
+    <text class="pr-tbl pr-sub" x="974" y="110">boring, consistent rollouts</text>
+    <text class="pr-tbl pr-sub" x="974" y="124">that survive traffic</text>
+  </g>
+</svg>
