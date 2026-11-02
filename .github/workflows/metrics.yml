@@ -1,11 +1,15 @@
 # Metrics — Engineering Intelligence
-# Generates assets/github-metrics.svg with lowlighter/metrics (official action).
+# Generates the metrics assets with lowlighter/metrics (official action).
+#
+# Two renders, split for a compact dashboard (no single 1100px-tall SVG):
+#   assets/github-metrics.svg        — ACTIVITY card: isometric calendar + habits
+#   assets/github-metrics-detail.svg — SIGNAL card: languages + recent activity + featured repos
 #
 # Safety properties:
 #   - action pinned to an immutable commit SHA (verified 2026-11-02)
 #   - queries use METRICS_TOKEN (classic PAT, public_repo scope) — see docs/INSTALLATION.md
 #   - commits use the default committer_token (GITHUB_TOKEN), no extra secret needed
-#   - commit message carries [skip ci] so the commit never re-triggers workflows
+#   - commit messages carry [skip ci] so commits never re-trigger workflows
 #   - concurrency: a running generation cannot pile up duplicates
 
 name: Metrics — Engineering Intelligence
@@ -30,7 +34,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Generate metrics
+      # ─── Card 1/2 · ACTIVITY: isometric calendar + coding habits ───
+      - name: Render metrics — activity card
         uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d # master@2026-11-02
         with:
           token: ${{ secrets.METRICS_TOKEN }} # GitHub PAT — minimum: public_repo (classic PAT)
@@ -38,29 +43,42 @@ jobs:
           filename: assets/github-metrics.svg
           config_timezone: Europe/Paris
           use_prebuilt_image: yes
-          # compact base content — no hireable banner
-          base: header, activity, community, repositories, metadata
+          base: header, activity
           base_hireable: no
-          # isometric contribution calendar (real GitHub data)
+          # dark palette alignment — CSS selectors match the actual generated SVG
+          # structure (verified 2026-11-02 on real output), palette-consistent
+          extras_css: |
+            @media (prefers-color-scheme: dark) {
+              svg { color: #C9D2E3 }
+              h1, h2, h3 { color: #38BDF8 }
+              .field svg { fill: #94A3B8 }
+              .field.error { color: #F87171 }
+              .field.error svg { fill: #F87171 }
+              footer { color: #94A3B8 }
+              .calendar .day { outline-color: rgba(148, 163, 184, .08) }
+              :root {
+                --color-calendar-graph-day-bg: #111C2E;
+                --color-calendar-graph-day-border: rgba(148, 163, 184, .08);
+              }
+            }
+          # real GitHub contribution data
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          # languages actually used (static analysis of public repos)
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          # coding habits (commit/PR facts + charts)
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
-          # recent activity — real public events only
-          plugin_activity: yes
-          plugin_activity_limit: 6
-          plugin_activity_visibility: public
-          # featured repositories (verified existing public repos)
-          plugin_repositories: yes
-          plugin_repositories_featured: aws-cloudops-platform, aws-devops-springboot-postgres, spring-boot-rest-api-postgresql
-          plugin_repositories_forks: no
-          # dark palette alignment — selectors match the actual generated SVG
-          # structure (verified 2026-11-02 on real output), palette-consistent
+          committer_message: "chore(metrics): refresh activity card [skip ci]"
+
+      # ─── Card 2/2 · SIGNAL: languages + recent activity + featured repos ───
+      - name: Render metrics — signal card
+        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d # master@2026-11-02
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: mortadhaechawech
+          filename: assets/github-metrics-detail.svg
+          config_timezone: Europe/Paris
+          use_prebuilt_image: yes
+          base_skip: yes # no header: card 1 already carries identity
           extras_css: |
             @media (prefers-color-scheme: dark) {
               svg { color: #C9D2E3 }
@@ -73,10 +91,13 @@ jobs:
               .repository .name span:last-child { color: #64748B }
               .repository .description, .repository .infos { color: #94A3B8 }
               .activity .issue { color: #38BDF8 }
-              .calendar .day { outline-color: rgba(148, 163, 184, .08) }
-              :root {
-                --color-calendar-graph-day-bg: #111C2E;
-                --color-calendar-graph-day-border: rgba(148, 163, 184, .08);
-              }
             }
-          committer_message: "chore(metrics): refresh engineering intelligence dashboard [skip ci]"
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_activity: yes
+          plugin_activity_limit: 6
+          plugin_activity_visibility: public
+          plugin_repositories: yes
+          plugin_repositories_featured: aws-cloudops-platform, aws-devops-springboot-postgres, spring-boot-rest-api-postgresql
+          plugin_repositories_forks: no
+          committer_message: "chore(metrics): refresh signal card [skip ci]"

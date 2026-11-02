@@ -37,8 +37,9 @@
 ## &nbsp;C · ENGINEERING INTELLIGENCE
 
 <!-- Generated automatically by .github/workflows/metrics.yml (lowlighter/metrics).
-     This placeholder is replaced on the first workflow run. -->
-<img src="assets/github-metrics.svg" alt="Metrics intelligence dashboard: isometric contribution calendar, coding habits, languages, recent activity and featured repositories — all powered by real GitHub data." width="100%">
+     Two-card dashboard: activity (isometric calendar + coding habits) and
+     signal (languages + recent activity + featured repositories). -->
+<img src="assets/github-metrics.svg" alt="Activity card: isometric contribution calendar over the last 12 months, coding habits charts (commit time distribution, language usage rhythm)" width="49.6%"><img src="assets/github-metrics-detail.svg" alt="Signal card: languages actually used across public repositories, recent public activity feed, and featured repositories" width="49.6%">
 
 <br>
 

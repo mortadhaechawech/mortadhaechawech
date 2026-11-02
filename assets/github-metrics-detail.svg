@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 560" role="img" aria-labelledby="mt2Title mt2Desc">
+  <title id="mt2Title">Metrics signal card — languages, recent activity, featured repositories (pending first run)</title>
+  <desc id="mt2Desc">Generated automatically by the metrics.yml workflow; displayed until the first run.</desc>
+  <defs>
+    <linearGradient id="mt2Bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="450" height="560" rx="16" fill="url(#mt2Bg)" stroke="#23334B" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <rect x="28" y="40" width="394" height="118" rx="10" fill="#111C2E" stroke="#23334B"/>
+  <text x="225" y="80" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#38BDF8">LANGUAGES</text>
+  <text x="225" y="104" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">pending first run of metrics.yml</text>
+  <rect x="28" y="176" width="394" height="118" rx="10" fill="#111C2E" stroke="#23334B"/>
+  <text x="225" y="216" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#818CF8">RECENT ACTIVITY</text>
+  <text x="225" y="240" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">pending first run of metrics.yml</text>
+  <rect x="28" y="312" width="394" height="118" rx="10" fill="#111C2E" stroke="#23334B"/>
+  <text x="225" y="352" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#34D399">FEATURED REPOSITORIES</text>
+  <text x="225" y="376" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">pending first run of metrics.yml</text>
+  <text x="225" y="500" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">see docs/INSTALLATION.md</text>
+</svg>
