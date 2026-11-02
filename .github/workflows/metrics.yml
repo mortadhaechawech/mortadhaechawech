@@ -53,14 +53,30 @@ jobs:
           plugin_habits_charts: yes
           # recent activity — real public events only
           plugin_activity: yes
-          plugin_activity_limit: 8
+          plugin_activity_limit: 6
           plugin_activity_visibility: public
           # featured repositories (verified existing public repos)
           plugin_repositories: yes
           plugin_repositories_featured: aws-cloudops-platform, aws-devops-springboot-postgres, spring-boot-rest-api-postgresql
           plugin_repositories_forks: no
-          # achievements — compact display, earned ranks only
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_limit: 8
+          # dark palette alignment — selectors match the actual generated SVG
+          # structure (verified 2026-11-02 on real output), palette-consistent
+          extras_css: |
+            @media (prefers-color-scheme: dark) {
+              svg { color: #C9D2E3 }
+              h1, h2, h3 { color: #38BDF8 }
+              .field svg { fill: #94A3B8 }
+              .field.error { color: #F87171 }
+              .field.error svg { fill: #F87171 }
+              footer { color: #94A3B8 }
+              .repository .name span:first-child { color: #38BDF8 }
+              .repository .name span:last-child { color: #64748B }
+              .repository .description, .repository .infos { color: #94A3B8 }
+              .activity .issue { color: #38BDF8 }
+              .calendar .day { outline-color: rgba(148, 163, 184, .08) }
+              :root {
+                --color-calendar-graph-day-bg: #111C2E;
+                --color-calendar-graph-day-border: rgba(148, 163, 184, .08);
+              }
+            }
           committer_message: "chore(metrics): refresh engineering intelligence dashboard [skip ci]"

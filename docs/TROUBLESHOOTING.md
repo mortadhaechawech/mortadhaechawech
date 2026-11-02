@@ -54,17 +54,13 @@ Deux familles de vérifications :
   s'accorder.
 
 ### Contraste du SVG metrics sur fond sombre
-- Ne rien patcher à l'aveugle : d'abord **ouvrir le SVG généré** et constater.
-- Si un contraste réel manque, `extras_css` (input officiel « Extra CSS »)
-  permet d'injecter du CSS dans le rendu, ex. :
-
-  ```yaml
-          extras_css: |
-            @media (prefers-color-scheme: dark) {
-              /* sélecteurs à cibler d'après les classes lues dans le SVG généré */
-            }
-  ```
-- Ne pas deviner les classes : elles dépendent du template rendu réel.
+- **Traité dans le workflow** : `extras_css` (input officiel « Extra CSS »)
+  injecte un bloc `@media (prefers-color-scheme: dark)` calibré sur les vraies
+  classes du SVG généré (vérifié le 2026-11-02 sur la sortie réelle : textes
+  #C9D2E3, titres #38BDF8, icônes #94A3B8, cellules calendrier #111C2E).
+- Si une future version de lowlighter/metrics renomme des classes, ré-executer
+  le workflow puis inspecter le SVG généré et mettre à jour les sélecteurs du
+  bloc `extras_css` dans `metrics.yml`.
 
 ### Quotas / rate limit
 - L'action possède ses propres retry (`retries`, `retries_delay`).

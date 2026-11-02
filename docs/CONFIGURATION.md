@@ -62,9 +62,9 @@ sur le SHA `366f8b9dfe3a59656c67d5dcad9950f59c9bc96d` (master, 2026-11-02).
 | Calendrier | `plugin_isocalendar: yes` · `duration: full-year` | calendrier isométrique réel |
 | Langages | `plugin_languages: yes` · `limit: 8` | analyse des dépôts publics |
 | Habitudes | `plugin_habits: yes` (+ facts + charts) | rythme de commits réel |
-| Activité | `plugin_activity: yes` · `limit: 8` · `visibility: public` | événements publics uniquement |
+| Activité | `plugin_activity: yes` · `limit: 6` · `visibility: public` | événements publics uniquement |
 | Dépôts | `plugin_repositories_featured: aws-cloudops-platform, aws-devops-springboot-postgres, spring-boot-rest-api-postgresql` · `forks: no` | repos vérifiés existants |
-| Achievements | `plugin_achievements: yes` · `display: compact` · `limit: 8` | rangs obtenus, sans gonflage |
+| Mode sombre | `extras_css` (@media prefers-color-scheme: dark) | sélecteurs calibrés sur le SVG généré réel (2026-11-02) — palette #C9D2E3/#38BDF8/#94A3B8, cellules calendrier #111C2E |
 
 Plugin `languages` en mode `indepth` **non activé** (il clone les dépôts, needs
 permissions supplémentaires et étire le rendu vertical — contraire à la
@@ -72,12 +72,12 @@ contrainte « compact »).
 
 ### Non configuré (et pourquoi)
 
-- `base_hireable`: non ("no") — statut employeur géré dans le header SVG
-  plutôt que dans le rendu metrics.
-- `extras_css`: absent — le mécanisme est officialisé dans `action.yml`
-  (description « Extra CSS ») mais la palette du défaut n'étant pas
-  personnalisable sans voir une première sortie réelle, tout tuning de couleur
-  post-génération est documenté dans `docs/TROUBLESHOOTING.md`.
+- `plugin_achievements` — **retiré** : sur un compte avec 3 stars et 0 release,
+  les rangs affichés sont décoratifs et allongent le rendu vertical ; à
+  ré-activer tardivement si les rangs deviennent significatifs (input
+  `plugin_achievements`, display `compact`).
+- `base_hireable`: no — statut employeur géré dans le header SVG plutôt que
+  dans le rendu metrics.
 
 ## 3. Planification
 
