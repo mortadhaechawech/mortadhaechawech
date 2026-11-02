@@ -56,7 +56,7 @@
 
 <img src="assets/project-showcase.svg" alt="Showcase of three flagship systems: SHOOTLY multi-vendor commerce platform, VAYMOS real-time delivery platform, ASSAY AI active learning platform." width="100%">
 
-#### ▪ SHOOTLY — Multi-vendor commerce & dropshipping platform
+#### ▪ SHOOTLY — Multi-vendor commerce & dropshipping platform → [`/shootly-showcase`](https://github.com/mortadhaechawech/shootly-showcase)
 
 A commerce ecosystem connecting suppliers, resellers, and customers through branded storefronts, seller wallets, payouts, and claims management. `Spring Boot 3` `Angular` `Google Cloud Run` `Firebase`
 
@@ -69,7 +69,7 @@ A commerce ecosystem connecting suppliers, resellers, and customers through bran
 
 </details>
 
-#### ▪ VAYMOS — Multi-vertical delivery & logistics platform
+#### ▪ VAYMOS — Multi-vertical delivery & logistics platform → [`/vaymous-showcase`](https://github.com/mortadhaechawech/vaymous-showcase)
 
 A real-time delivery platform with automated dispatching, driver coordination, and location-aware operations. `Spring Boot` `Angular/Ionic` `AWS` `OSRM`
 
@@ -96,8 +96,7 @@ An intelligent learning environment combining personalized tutoring, knowledge m
 
 </details>
 
-<sub>Repository note — the ASSAY repository is real but currently empty (code publication pending).
-SHOOTLY and VAYMOS source repositories are private deployments; no public link is invented here.</sub>
+<sub>Repository note — ASSAY: real repository, code publication pending · SHOOTLY &amp; VAYMOS: private source, public showcase repositories documenting architecture and features.</sub>
 
 <br>
 

@@ -76,5 +76,5 @@
   <text class="tbl sk" x="828" y="290" fill="#34D399">Supabase · Edge Functions</text>
 
   <!-- repository status footer -->
-  <text class="tbl" x="24" y="312" font-size="10.5" fill="#94A3B8" letter-spacing="1">SOURCE REPOSITORIES: ASSAY → /assay · SHOOTLY &amp; VAYMOS → private deployments — repositories pending publication</text>
+  <text class="tbl" x="24" y="312" font-size="10.5" fill="#94A3B8" letter-spacing="1">SOURCE: ASSAY → /assay (code pending) · SHOOTLY &amp; VAYMOS → showcase repositories — source available upon request</text>
 </svg>
