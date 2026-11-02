@@ -1,21 +1,467 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 560" role="img" aria-labelledby="mt2Title mt2Desc">
-  <title id="mt2Title">Metrics signal card — languages, recent activity, featured repositories (pending first run)</title>
-  <desc id="mt2Desc">Generated automatically by the metrics.yml workflow; displayed until the first run.</desc>
-  <defs>
-    <linearGradient id="mt2Bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0D1524"/>
-      <stop offset="1" stop-color="#111C2E"/>
-    </linearGradient>
-  </defs>
-  <rect x="0" y="0" width="450" height="560" rx="16" fill="url(#mt2Bg)" stroke="#23334B" stroke-width="1.5" stroke-dasharray="7 6"/>
-  <rect x="28" y="40" width="394" height="118" rx="10" fill="#111C2E" stroke="#23334B"/>
-  <text x="225" y="80" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#38BDF8">LANGUAGES</text>
-  <text x="225" y="104" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">pending first run of metrics.yml</text>
-  <rect x="28" y="176" width="394" height="118" rx="10" fill="#111C2E" stroke="#23334B"/>
-  <text x="225" y="216" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#818CF8">RECENT ACTIVITY</text>
-  <text x="225" y="240" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">pending first run of metrics.yml</text>
-  <rect x="28" y="312" width="394" height="118" rx="10" fill="#111C2E" stroke="#23334B"/>
-  <text x="225" y="352" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#34D399">FEATURED REPOSITORIES</text>
-  <text x="225" y="376" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">pending first run of metrics.yml</text>
-  <text x="225" y="500" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">see docs/INSTALLATION.md</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="781" class="">
+    <defs>
+        <style/>
+    </defs>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.center{justify-content:center}.horizontal-wrap{flex-wrap:wrap}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.repository,footer{display:flex;flex-direction:column}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;justify-content:flex-end;padding:0 4px}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .issue{display:inline;color:#58a6ff}svg.calendar{margin-left:13px;margin-top:4px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@media (prefers-color-scheme: dark) {
+ svg { color: #C9D2E3 }
+ h1, h2, h3 { color: #38BDF8 }
+ .field svg { fill: #94A3B8 }
+ .field.error { color: #F87171 }
+ .field.error svg { fill: #F87171 }
+ footer { color: #94A3B8 }
+ .repository .name span:first-child { color: #38BDF8 }
+ .repository .name span:last-child { color: #64748B }
+ .repository .description, .repository .infos { color: #94A3B8 }
+ .activity .issue { color: #38BDF8 }
+}</style>
+    <foreignObject x="0" y="0" width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
+            <section>
+                <h1 class="field">
+                    <img class="avatar" src="data:image/jpg;base64,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" width="20" height="20" />
+                    <span>Mortadha</span>
+                </h1>
+                <div class="row">
+                    <section>
+                        <div class="field ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"/>
+                            </svg>
+                            Joined GitHub 6 years ago
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"/>
+                            </svg>
+                            Followed by 0 users
+                        </div>
+                    </section>
+                    <section>
+                        <div class="field calendar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 11" width="210" height="16">
+                                <g>
+                                    <rect class="day" x="0" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="15" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="30" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="45" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="75" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="135" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"/>
+                            </svg>
+                            Contributed to 7 repositories
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="largeable largeable-inline-flex">
+                <div class="row">
+                    <section>
+                        <h2 class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"/>
+                            </svg>
+                            Activity
+                        </h2>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                            </svg>
+                            17 Commits
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v7.736a.75.75 0 101.5 0V1.75A1.75 1.75 0 0011.25 0h-8.5A1.75 1.75 0 001 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 000-1.5H2.75a.25.25 0 01-.25-.25V1.75zM4.75 4a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM4 7.75A.75.75 0 014.75 7h2a.75.75 0 010 1.5h-2A.75.75 0 014 7.75zm11.774 3.537a.75.75 0 00-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 00-1.062 1.058l1.943 1.95a.75.75 0 001.055.008l4.557-4.45z"/>
+                            </svg>
+                            0 Pull requests reviewed
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+                            </svg>
+                            0 Pull requests opened
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
+                            </svg>
+                            0 Issues opened
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
+                            </svg>
+                            0 issue comments
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M1.326 1.973a1.2 1.2 0 011.49-.832c.387.112.977.307 1.575.602.586.291 1.243.71 1.7 1.296.022.027.042.056.061.084A13.22 13.22 0 018 3c.67 0 1.289.037 1.861.108l.051-.07c.457-.586 1.114-1.004 1.7-1.295a9.654 9.654 0 011.576-.602 1.2 1.2 0 011.49.832c.14.493.356 1.347.479 2.29.079.604.123 1.28.07 1.936.541.977.773 2.11.773 3.301C16 13 14.5 15 8 15s-8-2-8-5.5c0-1.034.238-2.128.795-3.117-.08-.712-.034-1.46.052-2.12.122-.943.34-1.797.479-2.29zM8 13.065c6 0 6.5-2 6-4.27C13.363 5.905 11.25 5 8 5s-5.363.904-6 3.796c-.5 2.27 0 4.27 6 4.27z"/>
+                                <path d="M4 8a1 1 0 012 0v1a1 1 0 01-2 0V8zm2.078 2.492c-.083-.264.146-.492.422-.492h3c.276 0 .505.228.422.492C9.67 11.304 8.834 12 8 12c-.834 0-1.669-.696-1.922-1.508zM10 8a1 1 0 112 0v1a1 1 0 11-2 0V8z"/>
+                            </svg>
+                            Community stats
+                        </h2>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"/>
+                            </svg>
+                            Member of 0 organizations
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"/>
+                            </svg>
+                            Following 0 users
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+                            </svg>
+                            Sponsoring 0 repositories
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                            </svg>
+                            Starred 3 repositories
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                            Watching 1 repository
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="largeable largeable-inline-flex">
+                <div class="row">
+                    <section>
+                        <h2 class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                            </svg>
+                            9 Repositories
+                        </h2>
+                        <div class="row">
+                            <section>
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"/>
+                                    </svg>
+                                    Prefers MIT license
+                                </div>
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/>
+                                    </svg>
+                                    0 Releases
+                                </div>
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M8.878.392a1.75 1.75 0 00-1.756 0l-5.25 3.045A1.75 1.75 0 001 4.951v6.098c0 .624.332 1.2.872 1.514l5.25 3.045a1.75 1.75 0 001.756 0l5.25-3.045c.54-.313.872-.89.872-1.514V4.951c0-.624-.332-1.2-.872-1.514L8.878.392zM7.875 1.69a.25.25 0 01.25 0l4.63 2.685L8 7.133 3.245 4.375l4.63-2.685zM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432L2.5 5.677zm6.25 8.271l4.625-2.683a.25.25 0 00.125-.216V5.677L8.75 8.432v5.516z"/>
+                                    </svg>
+                                    0 Packages
+                                </div>
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" d="M2.5 3.5c0-.133.058-.318.282-.55.227-.237.592-.484 1.1-.708C4.899 1.795 6.354 1.5 8 1.5c1.647 0 3.102.295 4.117.742.51.224.874.47 1.101.707.224.233.282.418.282.551 0 .133-.058.318-.282.55-.227.237-.592.484-1.1.708C11.101 5.205 9.646 5.5 8 5.5c-1.647 0-3.102-.295-4.117-.742-.51-.224-.874-.47-1.101-.707-.224-.233-.282-.418-.282-.551zM1 3.5c0-.626.292-1.165.7-1.59.406-.422.956-.767 1.579-1.041C4.525.32 6.195 0 8 0c1.805 0 3.475.32 4.722.869.622.274 1.172.62 1.578 1.04.408.426.7.965.7 1.591v9c0 .626-.292 1.165-.7 1.59-.406.422-.956.767-1.579 1.041C11.476 15.68 9.806 16 8 16c-1.805 0-3.475-.32-4.721-.869-.623-.274-1.173-.62-1.579-1.04-.408-.426-.7-.965-.7-1.591v-9zM2.5 8V5.724c.241.15.503.286.779.407C4.525 6.68 6.195 7 8 7c1.805 0 3.475-.32 4.722-.869.275-.121.537-.257.778-.407V8c0 .133-.058.318-.282.55-.227.237-.592.484-1.1.708C11.101 9.705 9.646 10 8 10c-1.647 0-3.102-.295-4.117-.742-.51-.224-.874-.47-1.101-.707C2.558 8.318 2.5 8.133 2.5 8zm0 2.225V12.5c0 .133.058.318.282.55.227.237.592.484 1.1.708 1.016.447 2.471.742 4.118.742 1.647 0 3.102-.295 4.117-.742.51-.224.874-.47 1.101-.707.224-.233.282-.418.282-.551v-2.275c-.241.15-.503.285-.778.406-1.247.549-2.917.869-4.722.869-1.805 0-3.475-.32-4.721-.869a6.236 6.236 0 01-.779-.406z"/>
+                                    </svg>
+                                    624 kB used
+                                </div>
+                            </section>
+                            <section>
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+                                    </svg>
+                                    0 Sponsors
+                                </div>
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                                    </svg>
+                                    0 Stargazers
+                                </div>
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
+                                    </svg>
+                                    0 Forkers
+                                </div>
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"/>
+                                    </svg>
+                                    1 Watcher
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section>
+                <h2 class="field">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M1.5 2.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v8.5a.25.25 0 01-.25.25h-6.5a.75.75 0 00-.53.22L4.5 14.44v-2.19a.75.75 0 00-.75-.75h-2a.25.25 0 01-.25-.25v-8.5zM1.75 1A1.75 1.75 0 000 2.75v8.5C0 12.216.784 13 1.75 13H3v1.543a1.457 1.457 0 002.487 1.03L8.061 13h6.189A1.75 1.75 0 0016 11.25v-8.5A1.75 1.75 0 0014.25 1H1.75zm5.03 3.47a.75.75 0 010 1.06L5.31 7l1.47 1.47a.75.75 0 01-1.06 1.06l-2-2a.75.75 0 010-1.06l2-2a.75.75 0 011.06 0zm2.44 0a.75.75 0 000 1.06L10.69 7 9.22 8.47a.75.75 0 001.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0z"/>
+                    </svg>
+                    7 Languages
+                </h2>
+            </section>
+            <section class="column">
+                <h3 class="field">Most used languages</h3>
+                <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
+                    <mask id="languages-bar">
+                        <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
+                    </mask>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="390.3413870246085" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="390.3413870246085" y="0" width="38.858165548098434" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="429.1995525727069" y="0" width="16.403579418344517" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="445.6031319910515" y="0" width="7.872483221476511" height="8" fill="#384d54"/>
+                    <rect mask="url(#languages-bar)" x="453.475615212528" y="0" width="3.735570469798658" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="457.21118568232663" y="0" width="1.9552572706935123" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="459.1664429530201" y="0" width="0.8335570469798658" height="8" fill="#C1F12E"/>
+                </svg>
+                <div class="field center horizontal-wrap fill-width">
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#b07219" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        Java
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#f1e05a" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        JavaScript
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#3572A5" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        Python
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#384d54" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        Dockerfile
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#e34c26" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        HTML
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#663399" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        CSS
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#C1F12E" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        Batchfile
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="field">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M0 2.75A2.75 2.75 0 012.75 0h10.5A2.75 2.75 0 0116 2.75v10.5A2.75 2.75 0 0113.25 16H2.75A2.75 2.75 0 010 13.25V2.75zM2.75 1.5c-.69 0-1.25.56-1.25 1.25v10.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25V2.75c0-.69-.56-1.25-1.25-1.25H2.75z"/>
+                        <path d="M8 4a.75.75 0 01.75.75V6.7l1.69-.975a.75.75 0 01.75 1.3L9.5 8l1.69.976a.75.75 0 01-.75 1.298L8.75 9.3v1.951a.75.75 0 01-1.5 0V9.299l-1.69.976a.75.75 0 01-.75-1.3L6.5 8l-1.69-.975a.75.75 0 01.75-1.3l1.69.976V4.75A.75.75 0 018 4z"/>
+                    </svg>
+                    Featured repositories
+                </h2>
+                <div class="row">
+                    <section class="largeable-flex-wrap">
+                        <div class="row fill-width largeable-width-half">
+                            <section class="repository">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                                    </svg>
+                                    <div class="name">
+                                        <span>mortadhaechawech/aws-cloudops-platform</span>
+                                        <span>created Aug 27 2026</span>
+                                    </div>
+                                </div>
+                                <div class="field description">A production-grade CI/CD platform deploying a Spring Boot 3 Order Management System to AWS ECS Fargate. Features CodePipeline, CodeBuild, ECR, CloudFormation, and automated failure testing.</div>
+                                <div class="field infos">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"/>
+                                        </svg>
+                                        MIT
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                            <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width largeable-width-half">
+                            <section class="repository">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                                    </svg>
+                                    <div class="name">
+                                        <span>mortadhaechawech/aws-devops-springboot-postgres</span>
+                                        <span>created 21 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="field description">
+                                </div>
+                                <div class="field infos">
+                                    <div class="language">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill="#b07219" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                        </svg>
+                                        Java
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                            <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width largeable-width-half">
+                            <section class="repository">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                                    </svg>
+                                    <div class="name">
+                                        <span>mortadhaechawech/spring-boot-rest-api-postgresql</span>
+                                        <span>created Sep 20 2026</span>
+                                    </div>
+                                </div>
+                                <div class="field description">
+                                </div>
+                                <div class="field infos">
+                                    <div class="language">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill="#b07219" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                        </svg>
+                                        Java
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                            <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                            <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+                                        </svg>
+                                        0
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section>
+                <h2 class="field">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1116 0v5.25a.75.75 0 01-1.5 0V8a6.5 6.5 0 10-13 0v5.25a.75.75 0 01-1.5 0V8zm5.5 4.25a.75.75 0 01.75-.75h3.5a.75.75 0 010 1.5h-3.5a.75.75 0 01-.75-.75zM3 6.75C3 5.784 3.784 5 4.75 5h6.5c.966 0 1.75.784 1.75 1.75v1.5A1.75 1.75 0 0111.25 10h-6.5A1.75 1.75 0 013 8.25v-1.5zm1.47-.53a.75.75 0 011.06 0l.97.97.97-.97a.75.75 0 011.06 0l.97.97.97-.97a.75.75 0 111.06 1.06l-1.5 1.5a.75.75 0 01-1.06 0L8 7.81l-.97.97a.75.75 0 01-1.06 0l-1.5-1.5a.75.75 0 010-1.06z"/>
+                    </svg>
+                    Recent activity
+                </h2>
+                <div class="row">
+                    <section>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M1.75 1.5a.25.25 0 00-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h6.5a.25.25 0 00.25-.25v-9.5a.25.25 0 00-.25-.25H1.75zM0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0114.25 13H8.06l-2.573 2.573A1.457 1.457 0 013 14.543V13H1.75A1.75 1.75 0 010 11.25v-9.5zM9 9a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"/>
+                            </svg>
+                            No recent activity
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <footer>
+                <span>These metrics do not include all private contributions</span>
+                <span>Last updated 2 Nov 2026, 20:41:38 (timezone Europe/Paris) with lowlighter/metrics@3.35.0-beta</span>
+            </footer>
+        </div>
+        <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
+    </foreignObject>
 </svg>
