@@ -357,7 +357,7 @@
         <tspan class="bullet-sep"> • </tspan>
         <tspan>Primary: Java</tspan>
         <tspan class="bullet-sep"> • </tspan>
-        <tspan>7 Repositories</tspan>
+        <tspan>9 Repositories</tspan>
       </text>
 
       <!-- Metric Pills on the right (if enabled) -->
@@ -474,13 +474,163 @@
           <!-- Fill -->
           <rect x="0" y="16" width="4.0" height="6" rx="3" fill="#663399" />
         </g>
-      </g>
+      
+        <g transform="translate(0, 246)">
+          <text x="0" y="0" style="font-size: 10px; font-weight: 700; fill: var(--color-text-muted); letter-spacing: 0.08em;">
+            DOMAIN TOPICS
+          </text>
+          <g transform="translate(0, 10)">
+      
+          <g transform="translate(0, 0)">
+            <rect width="66" height="18" rx="9" fill="var(--color-badge-bg)" stroke="var(--color-card-border)" stroke-width="1" />
+            <text x="33" y="12" text-anchor="middle" style="font-size: 9.5px; fill: var(--color-text-secondary); font-family: ui-monospace, monospace;">
+              #angular
+            </text>
+          </g>
+        
+          <g transform="translate(72, 0)">
+            <rect width="53" height="18" rx="9" fill="var(--color-badge-bg)" stroke="var(--color-card-border)" stroke-width="1" />
+            <text x="26.5" y="12" text-anchor="middle" style="font-size: 9.5px; fill: var(--color-text-secondary); font-family: ui-monospace, monospace;">
+              #cloud
+            </text>
+          </g>
+        
+          <g transform="translate(131, 0)">
+            <rect width="59.5" height="18" rx="9" fill="var(--color-badge-bg)" stroke="var(--color-card-border)" stroke-width="1" />
+            <text x="29.75" y="12" text-anchor="middle" style="font-size: 9.5px; fill: var(--color-text-secondary); font-family: ui-monospace, monospace;">
+              #devops
+            </text>
+          </g>
+        
+          <g transform="translate(196.5, 0)">
+            <rect width="40" height="18" rx="9" fill="var(--color-badge-bg)" stroke="var(--color-card-border)" stroke-width="1" />
+            <text x="20" y="12" text-anchor="middle" style="font-size: 9.5px; fill: var(--color-text-secondary); font-family: ui-monospace, monospace;">
+              #aws
+            </text>
+          </g>
+        
+          <g transform="translate(0, 22)">
+            <rect width="72.5" height="18" rx="9" fill="var(--color-badge-bg)" stroke="var(--color-card-border)" stroke-width="1" />
+            <text x="36.25" y="12" text-anchor="middle" style="font-size: 9.5px; fill: var(--color-text-secondary); font-family: ui-monospace, monospace;">
+              #delivery
+            </text>
+          </g>
+        
+          <g transform="translate(78.5, 22)">
+            <rect width="72.5" height="18" rx="9" fill="var(--color-badge-bg)" stroke="var(--color-card-border)" stroke-width="1" />
+            <text x="36.25" y="12" text-anchor="middle" style="font-size: 9.5px; fill: var(--color-text-secondary); font-family: ui-monospace, monospace;">
+              #dispatch
+            </text>
+          </g>
+        
+          <g transform="translate(157, 22)">
+            <rect width="53" height="18" rx="9" fill="var(--color-badge-bg)" stroke="var(--color-card-border)" stroke-width="1" />
+            <text x="26.5" y="12" text-anchor="middle" style="font-size: 9.5px; fill: var(--color-text-secondary); font-family: ui-monospace, monospace;">
+              #ionic
+            </text>
+          </g>
+        
+          <g transform="translate(0, 44)">
+            <rect width="79" height="18" rx="9" fill="var(--color-badge-bg)" stroke="var(--color-card-border)" stroke-width="1" />
+            <text x="39.5" y="12" text-anchor="middle" style="font-size: 9.5px; fill: var(--color-text-secondary); font-family: ui-monospace, monospace;">
+              #logistics
+            </text>
+          </g>
+        </g></g></g>
       <g class="repo-grid" transform="translate(360, 90)">
       <text x="0" y="0" style="font-size: 11px; font-weight: 700; fill: var(--color-text-muted); letter-spacing: 0.08em;">
         ACTIVE REPOSITORIES // TELEMETRY
       </text>
     
         <g transform="translate(0, 18)">
+          <!-- Card Container -->
+          <rect
+            width="244"
+            height="74"
+            rx="8"
+            fill="var(--color-card-bg)"
+            stroke="var(--color-card-border)"
+            stroke-width="1"
+          />
+
+          <!-- Color Indicator Strip -->
+          <rect x="0" y="8" width="3" height="58" rx="1.5" fill="#64748B" />
+
+          <!-- Repo Name -->
+          <text x="12" y="18" style="font-size: 11px; font-weight: 700; fill: var(--color-text-primary);">
+            vaymous-showcase
+          </text>
+
+          <!-- Stars and Forks -->
+          <text x="234" y="18" text-anchor="end" style="font-size: 10px; font-weight: 600; fill: var(--color-text-muted);">
+            ★ 0  ⑂ 0
+          </text>
+
+          <!-- Description -->
+          <text x="12" y="34" style="font-size: 9.5px; fill: var(--color-text-secondary);">
+            Real-time delivery platform — Spring …
+          </text>
+
+          <!-- Language Pill & Activity Meter -->
+          <g transform="translate(12, 46)">
+            <circle cx="3" cy="7" r="3.5" fill="#64748B" />
+            <text x="11" y="10" style="font-size: 9px; font-weight: 600; fill: var(--color-text-muted);">
+              Markdown
+            </text>
+
+            <!-- Activity bar on right -->
+            <g transform="translate(150, 4)">
+              <rect width="60" height="4" rx="2" fill="var(--color-badge-bg)" />
+              <rect width="36.0" height="4" rx="2" fill="#64748B" />
+            </g>
+          </g>
+        </g>
+      
+        <g transform="translate(256, 18)">
+          <!-- Card Container -->
+          <rect
+            width="244"
+            height="74"
+            rx="8"
+            fill="var(--color-card-bg)"
+            stroke="var(--color-card-border)"
+            stroke-width="1"
+          />
+
+          <!-- Color Indicator Strip -->
+          <rect x="0" y="8" width="3" height="58" rx="1.5" fill="#64748B" />
+
+          <!-- Repo Name -->
+          <text x="12" y="18" style="font-size: 11px; font-weight: 700; fill: var(--color-text-primary);">
+            shootly-showcase
+          </text>
+
+          <!-- Stars and Forks -->
+          <text x="234" y="18" text-anchor="end" style="font-size: 10px; font-weight: 600; fill: var(--color-text-muted);">
+            ★ 0  ⑂ 0
+          </text>
+
+          <!-- Description -->
+          <text x="12" y="34" style="font-size: 9.5px; fill: var(--color-text-secondary);">
+            Multi-vendor e-commerce platform — Sp…
+          </text>
+
+          <!-- Language Pill & Activity Meter -->
+          <g transform="translate(12, 46)">
+            <circle cx="3" cy="7" r="3.5" fill="#64748B" />
+            <text x="11" y="10" style="font-size: 9px; font-weight: 600; fill: var(--color-text-muted);">
+              Markdown
+            </text>
+
+            <!-- Activity bar on right -->
+            <g transform="translate(150, 4)">
+              <rect width="60" height="4" rx="2" fill="var(--color-badge-bg)" />
+              <rect width="36.0" height="4" rx="2" fill="#64748B" />
+            </g>
+          </g>
+        </g>
+      
+        <g transform="translate(0, 102)">
           <!-- Card Container -->
           <rect
             width="244"
@@ -524,7 +674,7 @@
           </g>
         </g>
       
-        <g transform="translate(256, 18)">
+        <g transform="translate(256, 102)">
           <!-- Card Container -->
           <rect
             width="244"
@@ -568,7 +718,7 @@
           </g>
         </g>
       
-        <g transform="translate(0, 102)">
+        <g transform="translate(0, 186)">
           <!-- Card Container -->
           <rect
             width="244"
@@ -612,7 +762,7 @@
           </g>
         </g>
       
-        <g transform="translate(256, 102)">
+        <g transform="translate(256, 186)">
           <!-- Card Container -->
           <rect
             width="244"
@@ -656,7 +806,7 @@
           </g>
         </g>
       
-        <g transform="translate(0, 186)">
+        <g transform="translate(0, 270)">
           <!-- Card Container -->
           <rect
             width="244"
@@ -700,7 +850,7 @@
           </g>
         </g>
       
-        <g transform="translate(256, 186)">
+        <g transform="translate(256, 270)">
           <!-- Card Container -->
           <rect
             width="244"
@@ -743,50 +893,6 @@
             </g>
           </g>
         </g>
-      
-        <g transform="translate(0, 270)">
-          <!-- Card Container -->
-          <rect
-            width="244"
-            height="74"
-            rx="8"
-            fill="var(--color-card-bg)"
-            stroke="var(--color-card-border)"
-            stroke-width="1"
-          />
-
-          <!-- Color Indicator Strip -->
-          <rect x="0" y="8" width="3" height="58" rx="1.5" fill="#f1e05a" />
-
-          <!-- Repo Name -->
-          <text x="12" y="18" style="font-size: 11px; font-weight: 700; fill: var(--color-text-primary);">
-            Pomodoro-Timer
-          </text>
-
-          <!-- Stars and Forks -->
-          <text x="234" y="18" text-anchor="end" style="font-size: 10px; font-weight: 600; fill: var(--color-text-muted);">
-            ★ 0  ⑂ 0
-          </text>
-
-          <!-- Description -->
-          <text x="12" y="34" style="font-size: 9.5px; fill: var(--color-text-secondary);">
-            No description provided.
-          </text>
-
-          <!-- Language Pill & Activity Meter -->
-          <g transform="translate(12, 46)">
-            <circle cx="3" cy="7" r="3.5" fill="#f1e05a" />
-            <text x="11" y="10" style="font-size: 9px; font-weight: 600; fill: var(--color-text-muted);">
-              JavaScript
-            </text>
-
-            <!-- Activity bar on right -->
-            <g transform="translate(150, 4)">
-              <rect width="60" height="4" rx="2" fill="var(--color-badge-bg)" />
-              <rect width="6.0" height="4" rx="2" fill="#f1e05a" />
-            </g>
-          </g>
-        </g>
       </g>
       
     <g class="footer-group">
@@ -824,7 +930,7 @@
       <!-- Octo-Orbit Brand / Telemetry Timestamp on the right -->
       <g transform="translate(868, 524)">
         <text x="0" y="0" text-anchor="end" class="watermark-text">
-          ✦ github-profile-orbit • 2026-11-02
+          ✦ github-profile-orbit • 2026-11-09
         </text>
       </g>
     </g>
